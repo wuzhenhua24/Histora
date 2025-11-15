@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CardView.Histora"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="@color/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Scenario Title -->
+        <TextView
+            android:id="@+id/scenarioTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Title"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Probability -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/probability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:layout_marginEnd="12dp" />
+
+            <ProgressBar
+                android:id="@+id/probabilityBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progressTint="@color/success" />
+
+        </LinearLayout>
+
+        <!-- Scenario Description -->
+        <TextView
+            android:id="@+id/scenarioDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Subtitle"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Key Changes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关键变化:"
+            android:textAppearance="@style/TextAppearance.Title"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/keyChanges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Subtitle"
+            android:textSize="13sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Timeline Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timeline_view"
+            android:textAppearance="@style/TextAppearance.Title"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/timelineEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Subtitle"
+            android:textSize="13sp"
+            android:fontFamily="monospace"
+            android:background="@color/background_dark"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

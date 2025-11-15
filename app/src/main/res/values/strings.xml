@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Histora</string>
+    <string name="search_hint">搜索历史事件...</string>
+
+    <!-- Main Screen -->
+    <string name="recommended_events">推荐事件</string>
+    <string name="start_simulation">开始推演</string>
+    <string name="explore_history">探索历史</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">主页</string>
+    <string name="nav_events">历史事件</string>
+    <string name="nav_simulations">模拟结果</string>
+    <string name="nav_profile">我的</string>
+
+    <!-- Event Detail -->
+    <string name="event_background">事件背景</string>
+    <string name="key_figures">关键人物</string>
+    <string name="causality_graph">因果关系图</string>
+    <string name="modify_history">修改历史</string>
+    <string name="start_reasoning">开始推演</string>
+
+    <!-- Simulation -->
+    <string name="simulation_results">推演结果</string>
+    <string name="timeline_view">时间线视图</string>
+    <string name="scenario_selection">情景选择</string>
+    <string name="export_report">导出报告</string>
+    <string name="share_simulation">分享推演</string>
+
+    <!-- Settings -->
+    <string name="settings">设置</string>
+    <string name="language">语言</string>
+    <string name="notifications">通知设置</string>
+    <string name="narration_style">讲解风格</string>
+    <string name="academic_style">学术风</string>
+    <string name="story_style">故事风</string>
+    <string name="concise_style">简洁风</string>
+
+    <!-- Profile -->
+    <string name="my_simulations">我的推演</string>
+    <string name="simulation_history">历史记录</string>
+    <string name="favorites">收藏</string>
+
+    <!-- Common -->
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="loading">加载中...</string>
+</resources>
