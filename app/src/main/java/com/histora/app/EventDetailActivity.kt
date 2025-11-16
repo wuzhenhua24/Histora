@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.histora.app.adapters.KeyFigureAdapter
 import com.histora.app.databinding.ActivityEventDetailBinding
 import com.histora.app.models.HistoricalEvent
+import com.histora.app.utils.getSerializableExtraCompat
 
 class EventDetailActivity : AppCompatActivity() {
 
@@ -18,7 +19,7 @@ class EventDetailActivity : AppCompatActivity() {
         binding = ActivityEventDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        event = intent.getSerializableExtra("event") as? HistoricalEvent
+        event = intent.getSerializableExtraCompat<HistoricalEvent>("event")
             ?: run {
                 finish()
                 return

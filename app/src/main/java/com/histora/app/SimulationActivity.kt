@@ -12,6 +12,7 @@ import com.histora.app.data.SampleData
 import com.histora.app.databinding.ActivitySimulationBinding
 import com.histora.app.models.HistoricalEvent
 import com.histora.app.models.Simulation
+import com.histora.app.utils.getSerializableExtraCompat
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -27,7 +28,7 @@ class SimulationActivity : AppCompatActivity() {
         binding = ActivitySimulationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        event = intent.getSerializableExtra("event") as? HistoricalEvent
+        event = intent.getSerializableExtraCompat<HistoricalEvent>("event")
             ?: run {
                 finish()
                 return
